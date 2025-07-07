@@ -1,0 +1,308 @@
+/* Service Page Styles */
+.service-page {
+    padding-top: 70px; /* Account for fixed header */
+}
+
+/* HERO SECTION */
+.service-hero {
+    position: relative;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.service-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px 2rem;
+}
+
+/* Ganti ikon jadi logo */
+.hero-logo {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+    background: none;
+    padding: 0;
+    box-shadow: none;
+    margin-bottom: 1rem;
+}
+
+.service-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.service-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* SECTION DETAILS */
+.service-details {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.service-info h2,
+.service-info h3,
+.service-benefits h2,
+.service-benefits h3 {
+    color: #2c5530;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.service-info p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+/* BENEFITS BOX */
+.service-benefits {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 320px;
+    max-height: 420px;
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.benefits-list li {
+    color: #666;
+    font-size: 0.95rem;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.benefits-list li:last-child {
+    border-bottom: none;
+}
+
+.benefits-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #4a7c59;
+}
+
+/* ACTIVITY CARDS */
+.activity-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.activity-card {
+    display: flex;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.activity-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+}
+
+.activity-card .icon {
+    font-size: 1.8rem;
+    color: #4a7c59;
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.activity-card h4 {
+    color: #2c5530;
+    margin-bottom: 0.4rem;
+}
+
+.activity-card p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* SERVICE FEATURES LIST */
+.service-features {
+    list-style: none;
+    padding: 0;
+}
+
+.service-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-features li:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    color: #4a7c59;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.feature-content h4 {
+    color: #2c5530;
+    margin-bottom: 0.5rem;
+}
+
+.feature-content p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* CALL TO ACTION */
+.service-cta {
+    text-align: center;
+    padding: 4rem 0 2rem;
+}
+
+.service-cta h2 {
+    color: #2c5530;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.service-cta p {
+    color: #666;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ADDITIONAL ACTIVITIES */
+.additional-features h3 {
+    color: #2c5530;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.additional-activities {
+    padding: 60px 0;
+    background: #f8f9fa;
+}
+
+.additional-activities h2 {
+    text-align: center;
+    color: #2c5530;
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+}
+
+.additional-activities .service-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 0;
+    list-style: none;
+}
+
+/* LAYOUT */
+.horizontal-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    margin-top: 2rem;
+    align-items: flex-start;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .horizontal-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .service-hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-hero {
+        padding: 60px 0;
+    }
+
+    .service-hero h1 {
+        font-size: 2rem;
+    }
+
+    .service-features li {
+        padding: 1rem;
+    }
+
+    .service-cta {
+        padding: 3rem 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-logo {
+        width: 50px;
+        height: auto;
+        padding: 4px;
+    }
+
+    .service-hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .service-info h2,
+    .service-benefits h2,
+    .service-cta h2 {
+        font-size: 1.5rem;
+    }
+}
